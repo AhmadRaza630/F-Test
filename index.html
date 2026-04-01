@@ -409,9 +409,6 @@
   </style>
 </head>
 <body>
-  <div class="watermark" aria-hidden="true">
-    <img src="Brand1.png" alt="">
-  </div>
   <div class="top-bar">Home</div>
 
   <div class="order-status-banner" id="order-status-banner">
@@ -420,8 +417,8 @@
 
   <div class="page">
     <header>
-      <div class="Brand1-logo">IXR</div>
-      <div class="Brand1-text">Innovify XR AR</div>
+      <div class="Brand1-logo"></div>
+      <div class="Brand1-text"></div>
       <div class="header-right">
         <button type="button" class="cart-btn" id="cart-btn" aria-label="Cart">
           🛒
@@ -433,9 +430,9 @@
     <!-- Promo banner -->
     <section class="promo-banner">
       <div class="promo-text-wrap">
-        <div class="promo-label">Innovify XR</div>
+        <div class="promo-label"></div>
         <div class="promo-offer">60% OFF</div>
-        <div class="promo-sub">– New AR Experience Dish</div>
+        <div class="promo-sub">– New AR Experience Items</div>
         <a href="#order" class="promo-btn">Order Now</a>
       </div>
       <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=300&q=80" alt="Burger" class="promo-img">
@@ -450,99 +447,71 @@
 
     <!-- Category tabs: only Burger, Pizza, Fries are real -->
     <div class="categories" id="categories">
-      <button type="button" class="cat-btn real active" data-filter="all">All Dishes</button>
-      <button type="button" class="cat-btn real" data-filter="burger">Burgers</button>
-      <button type="button" class="cat-btn real" data-filter="pizza">Pizza</button>
-      <button type="button" class="cat-btn real" data-filter="fries">Fries</button>
-      <button type="button" class="cat-btn dummy" disabled>Pasta</button>
-      <button type="button" class="cat-btn dummy" disabled>Steak</button>
-      <button type="button" class="cat-btn dummy" disabled>Salad</button>
+      <button type="button" class="cat-btn real active" data-filter="all">All Furniture</button>
+      <button type="button" class="cat-btn real" data-filter="chair">Chairs</button>
+      <button type="button" class="cat-btn real" data-filter="table">Tables</button>
+      <button type="button" class="cat-btn real" data-filter="bed">Beds</button>
+      <button type="button" class="cat-btn dummy" disabled>Bean Bags</button>
+      <button type="button" class="cat-btn dummy" disabled>Sofas</button>
+      <button type="button" class="cat-btn dummy" disabled>Cabinets</button>
     </div>
 
-    <!-- Product grid: 3 real (burger, pizza, fries) + 3 dummy (pasta, steak, salad) -->
+    <!-- Product grid: 4 real (chair, table, bed, beanbag) -->
     <div class="product-grid" id="product-grid">
-      <article class="product-card real" data-category="burger">
+      <article class="product-card real" data-category="chair">
         <div class="card-body">
-          <div class="card-icon">🍔</div>
-          <h3 class="card-title">Cheese Burger</h3>
-          <p class="card-desc">Classic beef burger with melty cheese.</p>
-          <div class="card-price">Rs 850</div>
+          <div class="card-icon">🪑</div>
+          <h3 class="card-title">Modern Chair</h3>
+          <p class="card-desc">Comfortable ergonomic chair for your space.</p>
+          <div class="card-price">Rs 2500</div>
         </div>
         <div class="card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80" alt="Cheese Burger" class="card-img">
+          <img src="https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=400&q=80" alt="Modern Chair" class="card-img">
           <span class="card-badge">best for AR</span>
         </div>
-        <a href="arscreen.html?item=burger" class="card-ar-btn">View in AR &gt;</a>
+        <a href="arscreen.html?item=chair" class="card-ar-btn">View in AR &gt;</a>
       </article>
 
-      <article class="product-card real" data-category="pizza">
+      <article class="product-card real" data-category="table">
         <div class="card-body">
-          <div class="card-icon">🍕</div>
-          <h3 class="card-title">Loaded Pizza</h3>
-          <p class="card-desc">Cheesy slice straight on your table.</p>
-          <div class="card-price">Rs 1290</div>
+          <div class="card-icon">🪑</div>
+          <h3 class="card-title">Dining Table</h3>
+          <p class="card-desc">Elegant wooden table for family dinners.</p>
+          <div class="card-price">Rs 5000</div>
         </div>
         <div class="card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80" alt="Loaded Pizza" class="card-img">
+          <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&q=80" alt="Dining Table" class="card-img">
           <span class="card-badge">table view</span>
         </div>
-        <a href="arscreen.html?item=pizza" class="card-ar-btn">View in AR &gt;</a>
+        <a href="arscreen.html?item=table" class="card-ar-btn">View in AR &gt;</a>
       </article>
 
-      <article class="product-card real" data-category="fries">
+      <article class="product-card real" data-category="bed">
         <div class="card-body">
-          <div class="card-icon">🍟</div>
-          <h3 class="card-title">Crispy Fries</h3>
-          <p class="card-desc">See the fries in full 3D.</p>
-          <div class="card-price">Rs 490</div>
+          <div class="card-icon">🛏️</div>
+          <h3 class="card-title">King Size Bed</h3>
+          <p class="card-desc">Luxurious bed for ultimate comfort.</p>
+          <div class="card-price">Rs 15000</div>
         </div>
         <div class="card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&q=80" alt="Crispy Fries" class="card-img">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&q=80" alt="King Size Bed" class="card-img">
           <span class="card-badge">Quick view</span>
         </div>
-        <a href="arscreen.html?item=fries" class="card-ar-btn">View in AR &gt;</a>
+        <a href="arscreen.html?item=bed" class="card-ar-btn">View in AR &gt;</a>
       </article>
 
-      <article class="product-card dummy" data-category="dummy">
+      <article class="product-card real" data-category="beanbag">
         <div class="card-body">
-          <div class="card-icon">🍝</div>
-          <h3 class="card-title">Creamy Pasta</h3>
-          <p class="card-desc">Coming soon in AR.</p>
-          <div class="card-price">Rs 750</div>
+          <div class="card-icon">🪑</div>
+          <h3 class="card-title">Bean Bag</h3>
+          <p class="card-desc">Cozy bean bag for relaxation.</p>
+          <div class="card-price">Rs 1200</div>
         </div>
         <div class="card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=400&q=80" alt="Creamy Pasta" class="card-img">
+          <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400&q=80" alt="Bean Bag" class="card-img">
           <span class="card-badge">Coming soon</span>
         </div>
-        <span class="card-ar-btn">View in AR &gt;</span>
-      </article>
-
-      <article class="product-card dummy" data-category="dummy">
-        <div class="card-body">
-          <div class="card-icon">🥩</div>
-          <h3 class="card-title">Grilled Steak</h3>
-          <p class="card-desc">Coming soon in AR.</p>
-          <div class="card-price">Rs 1890</div>
-        </div>
-        <div class="card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=400&q=80" alt="Grilled Steak" class="card-img">
-          <span class="card-badge">Coming soon</span>
-        </div>
-        <span class="card-ar-btn">View in AR &gt;</span>
-      </article>
-
-      <article class="product-card dummy" data-category="dummy">
-        <div class="card-body">
-          <div class="card-icon">🥗</div>
-          <h3 class="card-title">Fresh Salad</h3>
-          <p class="card-desc">Coming soon in AR.</p>
-          <div class="card-price">Rs 550</div>
-        </div>
-        <div class="card-img-wrap">
-          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80" alt="Fresh Salad" class="card-img">
-          <span class="card-badge">Coming soon</span>
-        </div>
-        <span class="card-ar-btn">View in AR &gt;</span>
+        <a href="arscreen.html?item=beanbag" class="card-ar-btn">View in AR &gt;</a>
       </article>
     </div>
   </div>
